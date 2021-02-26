@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
   font-family: 'Poppins';
   src: url('../') format('woff2'),
@@ -25,3 +26,65 @@
   font-display: swap;
 }
 
+/* common style */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Poppins", "Arial", sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* SITE-HEADER */
+.site-header{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.container{
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.site-header-info{
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: center;
+}
+.site-header-info-title{
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  color: #515060;
+}
+.site-header-info-title__slim{
+  font-weight: 200;
+}
+.site-header-info-title__bold{
+  color: black;
+  font-weight: 600;
+}
+.site-header-info-text{
+  font-size: 13px;
+  color: #515060;
+  font-weight: 400;
+}
